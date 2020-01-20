@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+p{
+    text-align: center;
+    background: lightyellow;
+    padding: 20px;
+    color: skyblue;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.flexbox-header{
+    display: flex;
+    color: white;
+    background: lightblue;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0px 20px;
+}
+.flexbox-header >div{
+    margin-right: 50px;
+}
+.flexbox-header >div:nth-child(3){
+    margin-left: auto;
+}
+
+/* *****************************
+        GRID PAGE
+*********************************/
+.grid-page{
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: 40px 200px 40px;
+    margin: 0px 20px; 
+}
+
+.header{
+    background: skyblue;
+    grid-column: 1/-1;
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    
+}
+.header >div{
+    padding: 10px;
+}
+.header >div:nth-child(3){
+    margin-left: auto;
+    padding-right: 60px;
+}
+
+.menu{
+    grid-column: 1/2;
+    background: red;
+    padding: 90px 20px;
+    color: white;
+    font-weight: bolder;
+}
+.content{
+    grid-column: 2/-1;
+    background: rgb(141, 141, 50);
+    color: white;
+    padding: 90px;
+    font-weight: bolder;
+}
+.footer{
+    grid-column: 1/-1;
+    background: skyblue;
+    color: white;
+    font-weight: bolder;
+    padding: 30px ;
+}
